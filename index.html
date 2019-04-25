@@ -1,0 +1,30 @@
+<!doctype html>
+  <html>
+  <head>
+    <style>
+      * { box-sizing: border-box; }
+      html, body {
+        height: 100%;
+      }
+      body {
+        background: #000;
+        margin: 0;
+        display: grid;
+        grid: "term" 1fr / 1fr;
+      }
+      #terminal {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        right: 1em;
+        bottom: 1em;
+      }
+    </style>
+    <link rel="stylesheet" href="/console-mirror/xterm.css" />
+    <script src="/console-mirror/xterm.js"></script>
+    <script src="/console-mirror/client.js" defer></script>
+  </head>
+  <body>
+    <div id="terminal"></div>
+  </body>
+</html>
